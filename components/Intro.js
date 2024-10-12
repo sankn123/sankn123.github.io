@@ -29,7 +29,7 @@ export const Intro = ({ title, description, image, buttons }) => {
 						<img
 							className="img-fluid my-3 card-image" width="250"
 							height="250" src={image}
-							alt="profile of hashirshoaeb"
+							alt="profile of Sankalp Nagaonkar"
 						/>
 					</div>
 				</div>
@@ -48,6 +48,54 @@ export const About = ({ title, description }) => {
 						<p key={index} >{value}</p>
 					))}
 				</div>
+			</div>
+		</div>
+	);
+}
+
+// export const Research = ({ title, description }) => {
+// 	return (
+// 		<div id="research" className="bg-white py-5 px-5">
+// 			<div className="container">
+// 				<h1 className="text-primary fw-bold">{title}</h1>
+// 				<div className="px-sm-5">
+// 					{description.map((value, index) => (
+// 						<p key={index} >{value}</p>
+// 					))}
+// 				</div>
+// 			</div>
+// 		</div>
+// 	);
+// }
+
+export const Research = ({ title, description, publications }) => {
+	return (
+		<div id="research" className="bg-white py-5 px-5">
+			<div className="container">
+				<h1 className="text-primary fw-bold">{title}</h1>
+				<div className="px-sm-5">
+					{description.map((value, index) => (
+						<p key={index}>{value}</p>
+					))}
+				</div>
+				{publications && publications.length > 0 && (
+					<div className="mt-4">
+						<h2 className="text-danger fw-bold">Publications</h2>
+						<ul className="list-unstyled px-sm-5">
+							{publications.map((publication, index) => (
+								<li key={index} className="mb-3">
+									<h4 className="fw-bold">{publication.title}</h4>
+									<p>{publication.description}</p>
+									{publication.link && (
+										<a href={publication.link} target="_blank" rel="noopener noreferrer" className="text-primary">
+											Paper Link
+										</a>
+									)}
+								</li>
+							))}
+						</ul>
+					</div>
+				)}
 			</div>
 		</div>
 	);

@@ -3,6 +3,7 @@ const build_path = './out';
 
 const args = process.argv.slice(2);
 const username = args[0];
+// const repoURL = `https://github.com/${username}/${username}.github.io.git`;
 const repoURL = `https://github.com/${username}/${username}.github.io.git`;
 const branch = args[1];
 

@@ -4,7 +4,7 @@ import { faAppStore, faGithub, faGooglePlay } from '@fortawesome/free-brands-svg
 import { } from '@fortawesome/free-solid-svg-icons';
 
 export const navigation = {
-  name: "Hashir",
+  name: "Home",
   links: [
     {
       title: "About",
@@ -15,6 +15,10 @@ export const navigation = {
       link: "#projects",
     },
     {
+      title: "Research",
+      link: "#research",
+    },
+    {
       title: "Contact",
       link: "#contact",
     },
@@ -22,15 +26,11 @@ export const navigation = {
       title: "Links",
       link: "/links",
     },
-    {
-      title: "Blog",
-      link: "https://medium.com/@hashirshoaeb",
-    }
   ],
 }
 export const intro = {
-  title: "Hey, I'm Hashir",
-  description: "A Computer Engineer creating mobile apps and static websites.",
+  title: "Hey, I'm Sankalp",
+  description: "An electrical engineer focused on integrating AI into real-world applications.",
   image: profile.src,
   buttons: [
     {
@@ -40,7 +40,7 @@ export const intro = {
     },
     {
       title: "Resume",
-      link: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
+      link: "https://drive.google.com/file/d/11f6X9eGAgBmm1V0r9n4nIGSM4tad4qDT/view?usp=sharing",
       isPrimary: false,
     },
   ],
@@ -49,85 +49,115 @@ export const intro = {
 export const about = {
   title: "Who I am",
   description: [
-    "I graduated from National University of Sciences and Technology (NUST) in 2020 with a degree in Computer Engineering. I kick started my professional career as a mobile application developer working remotely for a UK based startup — Lessgo.",
-    "The tech industry is ever-evolving and I love being able to grow with it, while continually solidifying the fundamentals. I opensource my code from a place of empathy - for future developers, teammates, users, and with accessibility in mind. I also love joining communities, helping and mentoring new developers, and supporting organizations to promote diversity in tech. I’m sharing my programming journey on instagram, helping people who are just getting into the space of programming.",
-    "When I’m not programming, I focus on my hobbies which are: diary writing, doodling, meeting people and growing my network.",
+    "I am a final-year B.Tech student at the Indian Institute of Technology, Dharwad, majoring in Electrical Engineering. I am currently working as a research assistant at IIT Dharwad, working on Computer Vision problems. I love reading new research papers and implementing their findings into practical applications, constantly pushing the boundaries of my knowledge.",
+    "Alongside my research, I have completed two internships at different startups, which I thoroughly enjoyed. I love the startup environment because of the sense of ownership it provides in developing and delivering the end-to-end product.",
+    "When I'm not diving into research, I enjoy playing football and spending time gaming—though CSGO was my favorite until CS-2 ruined it!",
   ],
 }
 
-export const work = {
-  title: "What I do",
+// export const work = {
+//   title: "What I do",
+//   cards: [
+//     {
+//       title: "Mobile App Development",
+//       description: "I create pixel perfect iOS and Andriod apps using Flutter.",
+//       icons: null,
+//     },
+//     {
+//       title: "Web Development",
+//       description: "I create responsive static websites using Reactjs.",
+//       icons: null,
+//     }
+//   ],
+// }
+
+export const projects = {
+  title: "Some of my Projects",
   cards: [
     {
-      title: "Mobile App Development",
-      description: "I create pixel perfect iOS and Andriod apps using Flutter.",
-      icons: null,
+      title: "Adding AI generated voiceovers to silent videos",
+      description: "An easy to use script that uses VideoDB for scene indexing, OpenAI for script generation, and ElevenLabs for realistic audio voiceovers, transforming silent footage into dynamic and engaging content.",
+      icons: [
+        {
+          icon: faGithub,
+          link: "https://github.com/sankn123/AI-voiceovers-to-silent-videos",
+        },
+      ]
     },
     {
-      title: "Web Development",
-      description: "I create responsive static websites using Reactjs.",
-      icons: null,
+      title: "Chandrayaan-2 Image Super-Resolution",
+      description: "A project focused on enhancing the resolution of images using Generative AI from Indian Space Research Organisation-ISRO's Chandrayaan-2 mission using real-life data.",
+      icons: [
+        {
+          icon: faGithub,
+          link: "https://github.com/snjvn/Moon_Mapping_Cosmosoc",
+        },
+  
+      ]
+    },
+    {
+      title: "Paper Implementations",
+      description: "Few of my implementations of key research papers in deep learning.",
+      icons: [
+        {
+          icon: faGithub,
+          link: "https://github.com/sankn123/DCGAN-Implementation",
+        },
+        {
+          icon: faGithub,
+          link: "https://github.com/sankn123/Very-deep-convolutional-networks-for-large-scale-image-recognition-Implementation",
+        },
+        {
+          icon: faGithub,
+          link: "https://github.com/sankn123/Transformer-From-Scratch",
+        },
+      ]
     }
   ],
 }
 
-export const projects = {
-  title: "Projects",
-  cards: [
-    {
-      title: "StarBook",
-      description: "A digital diary and mood tracking app that helps you in keeping track of your mood and productivity throughout the month/year.",
-      icons: [
-        {
-          icon: faAppStore,
-          link: "https://apps.apple.com/us/app/starbook-journal-ai-diary/id1552418289",
-        },
-        {
-          icon: faGithub,
-          link: "https://github.com/hashirshoaeb/star_book",
-        },
-      ]
-    },
-    {
-      title: "QuranTalk",
-      description: "An emotional well being and mental health app. The app helps people to navigate their emotions in the light of the Quran.",
-      icons: [
-        {
-          icon: faAppStore,
-          link: "https://apps.apple.com/us/app/qurantalk/id1563425149",
-        },
-        {
-          icon: faGooglePlay,
-          link: "https://play.google.com/store/apps/details?id=com.ayahemotion.quran_talk",
-        },
-      ]
-    },
-    {
-      title: "Portfolio",
-      description: "A portfolio website template that helps you showcase your work, projects and skills as a software developer or freelancer.",
-      icons: [
-        {
-          icon: faGithub,
-          link: "https://github.com/hashirshoaeb/portfolio",
-        },
-      ]
-    },
-  ],
+export const research = {
+  title: "Research Interests",
+  description: [
+    "I am working as a research assistant at IIT Dharwad, and my research interests lie in Computer Vision, Generative AI, and Natural Language Processing (NLP).",
+    ],
+  publications: [
+      {
+        title: "TM-PATHVQA: 90000+ Textless Multilingual Questions for Medical Visual Question Answering",
+        description: "Published at Interspeech 2024. This work focuses on a speech-based VQA system with multilingual spoken questions. We proposed a dataset with 98,397 multilingual spoken questions and answers based on 5,004 pathological images along with 70 hours of audio, containing spoken questions in English, German & French. Finally, this work benchmarks and compares TM-PathVQA systems implemented using various combinations of acoustic and image features.",
+        link: "https://www.isca-archive.org/interspeech_2024/rajkhowa24_interspeech.pdf", // replace with actual link if available
+      },
+      {
+        title: "AMamba: Enhancing Audio Reprsentation Learning Using State Space Model (Under Review)",
+        description: "Submitted to Neurocomputing journal. This work introduces the first-ever Audio Mamba, a state-space model.",
+        link: "", // replace with actual link if available
+      },
+      {
+        title: "Adaptive Knowledge Fusion Ratio-Based Knowledge Distillation (Under Review)",
+        description: "Submitted to Pattern Recognition journal. This work highlights a limitation of standard knowledge distillation and introduces a trainable approach to the fusion ratio.",
+        link: "", // replace with actual link if available
+      },
+      {
+        title: "BadScan: An Architectural Backdoor Attack on Visual State Space Models (Under Review)",
+        description: "Submitted to Winter Conference on Applications of Computer Vision (WACV) conference.",
+        link: "", // replace with actual link if available
+      },
+      {
+        title: "When Visual State Space Model Meets Backdoor Attacks (Under Review)",
+        description: "Submitted to Winter Conference on Applications of Computer Vision (WACV) conference.",
+        link: "", // replace with actual link if available
+      }
+    ],
 }
 
 export const contact = {
   title: "Get in touch",
-  description: "Coffee Chat! Please do not hesitate to schedule a meeting. Alternatively, feel free to reach out directly by email at hashirshoaeb@gmail.com.",
+  description: "Feel free to reach out directly by email at sankalp.nagaonkar@gmail.com.",
   buttons: [
     {
       title: "Email Me",
-      link: "mailto:hashirshoaeb@gmail.com",
+      link: "mailto:sankalp.nagaonkar@gmail.com",
       isPrimary: true,
-    },
-    {
-      title: "Schedule Meeting",
-      link: "https://topmate.io/hashirshoaeb",
-      isPrimary: false,
     },
   ]
 }
@@ -135,35 +165,32 @@ export const contact = {
 // SEARCH ENGINE 
 export const SEO = {
   // 50 - 60 char  
-  title: "Hashir Shoaib | Computer Engineer | Flutter | Reactjs developer",
-  description: "I create mobile apps and static websites. I graduated from National University of Sciences and Technology (NUST) in 2020 with a degree in Computer Engineering.",
+  title: "Sankalp Nagaonkar",
+  // description: "I create mobile apps and static websites. I graduated from National University of Sciences and Technology (NUST) in 2020 with a degree in Computer Engineering.",
   image: profile.src,
 }
 
 export const links = {
   image: profile.src,
-  title: "@hashirshoaeb",
-  description: "Computer Engineer | Flutter | Reactjs Developer",
+  title: "@sankn123",
+  description: "Electrical Engineer | AI Enthusiast | Computer Vision and Generative AI",
   cards: [
     {
-      title: "My website",
-      link: "https://hashirshoaeb.com/",
+      title: "Twitter",
+      link: "https://x.com/sankn123/",
+    },
+  
+    {
+      title: "GitHub",
+      link: "https://github.com/sankn123/",
     },
     {
-      title: "QuranTalk App",
-      link: "https://www.qurantalk.app/",
+      title: "LinkedIn",
+      link: "https://linkedin.com/in/sankalp-nagaonkar-18343823b/",
     },
     {
-      title: "StarBook App",
-      link: "https://starbook.dev/",
-    },
-    {
-      title: "My GitHub",
-      link: "https://github.com/hashirshoaeb/",
-    },
-    {
-      title: "My LinkedIn",
-      link: "https://www.linkedin.com/in/hashirshoaeb/",
+      title: "Google Scholar",
+      link: "https://scholar.google.com/citations?user=sCr-DQgAAAAJ&hl=en",
     },
   ]
 }
